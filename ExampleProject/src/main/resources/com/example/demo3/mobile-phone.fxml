@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="467.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.MobilePhoneController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="100.0" layoutY="62.0" />
+      <TextField fx:id="brandTextFiled" layoutX="100.0" layoutY="107.0" />
+      <TextField fx:id="priceTextField" layoutX="100.0" layoutY="149.0" />
+      <Text layoutX="52.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="52.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand:" />
+      <Text layoutX="52.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price:" />
+      <TableView fx:id="mobileTableView" layoutX="42.0" layoutY="234.0" prefHeight="200.0" prefWidth="482.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="139.19997787475586" text="Name" />
+          <TableColumn fx:id="brandCol" prefWidth="216.8000030517578" text="Brand" />
+            <TableColumn fx:id="priceCol" prefWidth="127.20001220703125" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="289.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleOnAddButton" text="ADD" />
+   </children>
+</AnchorPane>
