@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentgrade.StudentGradeController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="102.0" layoutY="64.0" />
+      <TextField fx:id="marksTextField" layoutX="102.0" layoutY="114.0" />
+      <Text layoutX="60.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="61.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marks" />
+      <Label fx:id="showGradeTextField" layoutX="87.0" layoutY="190.0" prefHeight="35.0" prefWidth="282.0" />
+      <Button layoutX="282.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleCalculate" prefHeight="26.0" prefWidth="111.0" text="Calculate Grade" />
+   </children>
+</AnchorPane>
