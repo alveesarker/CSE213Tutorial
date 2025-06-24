@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arithmeticoperation.ArithmeticOperation">
+   <children>
+      <Button layoutX="389.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#handleSumButtonClicked" prefHeight="26.0" prefWidth="123.0" text="Sum" />
+      <Label fx:id="resultLabel" layoutX="40.0" layoutY="102.0" text="Result" />
+      <TextField fx:id="numOneTextFiled" layoutX="40.0" layoutY="53.0" />
+      <TextField fx:id="numTwoTextFiled" layoutX="208.0" layoutY="53.0" />
+      <TableView fx:id="historyTableView" layoutX="40.0" layoutY="171.0" prefHeight="200.0" prefWidth="476.0">
+        <columns>
+          <TableColumn fx:id="numOneCol" prefWidth="155.20001220703125" text="Num1" />
+          <TableColumn fx:id="numTwoCol" prefWidth="180.0" text="Num2" />
+            <TableColumn fx:id="sumCol" prefWidth="140.79998779296875" text="Sum" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
