@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="539.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.creditcard.CreditCardController">
    <children>
       <TextField fx:id="cardNoTTextField" layoutX="129.0" layoutY="55.0" onAction="#handleCardNoOnChange" />
@@ -21,7 +20,7 @@
       <TextField fx:id="creditLimitTextField" layoutX="123.0" layoutY="180.0" />
       <Text layoutX="39.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Limit" />
       <ComboBox fx:id="cardTypeComboBox" layoutX="81.0" layoutY="212.0" prefWidth="150.0" promptText="Card Type" />
-      <Button fx:id="addButton" layoutX="321.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleAddCreditCardButton" text="Validate &amp; Add New Card to ArrayList" />
+      <Button layoutX="321.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleAddCreditCardButton" text="Validate &amp; Add New Card to ArrayList" />
       <TableView fx:id="crditCardTableView" layoutX="39.0" layoutY="292.0" prefHeight="200.0" prefWidth="667.0">
         <columns>
           <TableColumn fx:id="cardNoCol" prefWidth="122.39998626708984" text="Card No." />
