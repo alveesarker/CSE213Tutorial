@@ -52,13 +52,13 @@ public class Main {
         int a = 30;
         int b = 40;
 
-        if (x < y || a > b) {
-            // code
-            System.out.println("Hello");
-        } else {
-            System.out.println("Hello java");
-        }
-
+        // if (x < y || a > b) {
+        //     // code
+        //     System.out.println("Hello");
+        // } else {
+        //     System.out.println("Hello java");
+        // }
+        
         // String result = x < y ? "Hello" : "Hello java";
         // System.out.println(result);
         // if (x > y) {
