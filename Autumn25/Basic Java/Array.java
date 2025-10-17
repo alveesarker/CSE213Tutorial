@@ -1,11 +1,11 @@
 public class Array {
     public static void main(String[] args) {
 
-        String s = "Hello";
-        int x = 10;
-        float y = 10.5f;
-        double i = 10.48;
-        char c = 'A';
+        // String s = "Hello";
+        // int x = 10;
+        // float y = 10.5f;
+        // double i = 10.48;
+        // char c = 'A';
 
         String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
         int[] myNum = { 1, 2, 4, 5, 6 };
