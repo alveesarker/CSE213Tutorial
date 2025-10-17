@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="473.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoproject.TestController">
+   <children>
+      <TableView fx:id="studentTable" layoutX="48.0" layoutY="237.0" prefHeight="200.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="235.19998931884766" text="name" />
+          <TableColumn fx:id="idCol" prefWidth="231.199951171875" text="id" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nameTextField" layoutX="132.0" layoutY="60.0" />
+      <TextField fx:id="idTextField" layoutX="132.0" layoutY="108.0" />
+      <Text layoutX="89.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="89.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id:" />
+      <Button layoutX="80.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="26.0" prefWidth="103.0" text="Add" />
+   </children>
+</AnchorPane>
