@@ -100,6 +100,7 @@ public class CourseOutlineController {
 
         outlineList.add(co);
         errorAlert("successfully added to the arraylist");
+        System.out.println(outlineList);
 
     }
 

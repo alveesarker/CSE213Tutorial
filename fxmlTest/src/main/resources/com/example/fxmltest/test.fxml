@@ -15,8 +15,8 @@
           <TableColumn fx:id="deptCol" prefWidth="320.79998779296875" text="Department" />
         </columns>
       </TableView>
-      <TextField fx:id="idTextField" layoutX="64.0" layoutY="82.0" />
+      <TextField fx:id="idTextField" layoutX="64.0" layoutY="82.0" onScrollFinished="#handleOnClick" />
       <ComboBox fx:id="deptComboBox" layoutX="251.0" layoutY="82.0" prefWidth="150.0" />
-      <Button layoutX="64.0" layoutY="152.0" mnemonicParsing="false" onAction="#handleOnClick" prefHeight="26.0" prefWidth="100.0" text="Add" />
+      <Button layoutX="64.0" layoutY="152.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Add" />
    </children>
 </AnchorPane>

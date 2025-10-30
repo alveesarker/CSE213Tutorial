@@ -18,13 +18,9 @@ public class CourseOutline {
         this.year = year;
     }
 
-    public String getCourseId() {
-        return courseId;
-    }
+    public String getCourseId() { return courseId; }
 
-    public void setCourseId(String courseId) {
-        this.courseId = courseId;
-    }
+    public void setCourseId(String courseId) { this.courseId = courseId; }
 
     public String getCourseTitle() {
         return courseTitle;
@@ -38,9 +34,7 @@ public class CourseOutline {
         return prReq1;
     }
 
-    public void setPrReq1(String prReq1) {
-        this.prReq1 = prReq1;
-    }
+    public void setPrReq1(String prReq1) { this.prReq1 = prReq1; }
 
     public String getPreReq2() {
         return preReq2;

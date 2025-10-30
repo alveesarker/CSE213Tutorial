@@ -1,6 +1,7 @@
 package com.example.fxmltest;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
@@ -35,7 +36,18 @@ public class TestController
     }
 
     @javafx.fxml.FXML
-    public void handleOnClick(ActionEvent actionEvent) {
+    public void handleOnClick(Event event) {
+        System.out.println("Hello");
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setTitle("Course Type");
+        a.setHeaderText("Course classification");
+        a.setContentText("This is a Lab course");
+        a.showAndWait();
+    }
+
+
+//    @javafx.fxml.FXML
+//    public void handleOnClick() {
 //        String text = inputTextField1.getText();
 //        outputText.setText(text);
 //        String text = inputComboBox.getValue();
@@ -59,15 +71,17 @@ public class TestController
 //        LocalDate date = datePicker.getValue();
 //        System.out.println(date.toString());
 
-        Student s = new Student(Integer.parseInt(idTextField.getText()), deptComboBox.getValue());
-        students.add(s);
+//        Student s = new Student(Integer.parseInt(idTextField.getText()), deptComboBox.getValue());
+//        students.add(s);
+//
+//        studentTableView.getItems().clear();
+//        for (Student std: students){
+//            studentTableView.getItems().add(std);
+//        }
 
-        studentTableView.getItems().clear();
-        for (Student std: students){
-            studentTableView.getItems().add(std);
-        }
+//        System.out.println("Hello");
 
-    }
+//    }
 }
 //[1, 2, 3] arraylist
 
