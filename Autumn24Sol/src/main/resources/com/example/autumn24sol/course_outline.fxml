@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.autumn24sol.Course_outline"
+            prefWidth="600.0" prefHeight="400.0">
+</AnchorPane>
