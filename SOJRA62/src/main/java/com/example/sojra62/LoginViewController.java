@@ -15,18 +15,29 @@ public class LoginViewController {
 
     @javafx.fxml.FXML
     public void initialize() {
-        HelperClass.candidate = new Candidate("123", "abc", "abc@example.com", "abc123", "+8808888", "Dhaka", "BSC", "APP DEV", 3);
-        HelperClass.hrManager = new HRManager("456", "def", "def@example.com", "def456", "+8805555", "XYZ", "hr");
+        HelperClass.candidate = new Candidate("can123", "abc", "abc@example.com", "abc123", "+8808888", "Dhaka", "BSC", "APP DEV", 3);
+        HelperClass.hrManager = new HRManager("hrm456", "def", "def@example.com", "def456", "+8805555", "XYZ", "hr");
     }
 
     @javafx.fxml.FXML
     public void handleLogInButton(ActionEvent actionEvent) throws IOException {
-        if (idTextfield.getText().equals(HelperClass.hrManager.getId()) && passTextField.getText().equals(HelperClass.hrManager.getPassword())) {
-            HelperClass.sceneSwitch(actionEvent, "rec-dash-view.fxml", "Dashboard");
-        } else {
-            Alert a = new Alert(Alert.AlertType.ERROR);
-            a.setContentText("Your id or password was wrong!");
-            a.showAndWait();
+        if (idTextfield.getText().startsWith("can")) {
+            if (idTextfield.getText().equals(HelperClass.candidate.getId()) && passTextField.getText().equals(HelperClass.candidate.getPassword())) {
+                HelperClass.sceneSwitch(actionEvent, "candidate-dash-view.fxml", "Dashboard");
+            } else {
+                Alert a = new Alert(Alert.AlertType.ERROR);
+                a.setContentText("Your id or password was wrong!");
+                a.showAndWait();
+            }
+        } else if (idTextfield.getText().startsWith("hrm")) {
+            if (idTextfield.getText().equals(HelperClass.hrManager.getId()) && passTextField.getText().equals(HelperClass.hrManager.getPassword())) {
+                HelperClass.sceneSwitch(actionEvent, "rec-dash-view.fxml", "Dashboard");
+            } else {
+                Alert a = new Alert(Alert.AlertType.ERROR);
+                a.setContentText("Your id or password was wrong!");
+                a.showAndWait();
+            }
         }
+
     }
 }

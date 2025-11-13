@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="438.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sojra62.JobsViewController">
+   <children>
+      <TableView fx:id="jobTableView" layoutX="53.0" layoutY="82.0" prefHeight="250.0" prefWidth="683.0">
+         <columns>
+            <TableColumn fx:id="jobTiltleCol" prefWidth="75.0" text="Job Title" />
+            <TableColumn fx:id="compNameCol" prefWidth="84.0" text="Comp Name" />
+            <TableColumn fx:id="locationCol" prefWidth="66.4000244140625" text="Location" />
+            <TableColumn fx:id="typeCol" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="salaryCol" prefWidth="75.0" text="Salary" />
+            <TableColumn fx:id="datePostedCol" prefWidth="129.5999755859375" text="Date Posted" />
+            <TableColumn fx:id="AppDeadlineCol" prefWidth="176.79998779296875" text="Application Deadline" />
+         </columns>
+      </TableView>
+      <Button layoutX="53.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <Button layoutX="640.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleApplyForJobButton" text="Apply for a job" />
+   </children>
+</AnchorPane>

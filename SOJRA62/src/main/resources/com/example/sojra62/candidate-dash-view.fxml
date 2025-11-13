@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="456.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sojra62.CandidateDashViewController">
+   <children>
+      <Button layoutX="75.0" layoutY="90.0" mnemonicParsing="false" onAction="#handleJobButton" prefHeight="50.0" prefWidth="184.0" text="Jobs" />
+      <Button layoutX="673.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleLogOutButton" text="Log out" />
+   </children>
+</AnchorPane>
