@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="472.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myproject.Arithmetic">
+   <children>
+      <TextField fx:id="a" layoutX="68.0" layoutY="54.0" />
+      <TextField fx:id="b" layoutX="302.0" layoutY="67.0" />
+      <Button layoutX="143.0" layoutY="167.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button layoutX="371.0" layoutY="167.0" mnemonicParsing="false" onAction="#mult" text="Mult" />
+      <Text fx:id="result" layoutX="110.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>
