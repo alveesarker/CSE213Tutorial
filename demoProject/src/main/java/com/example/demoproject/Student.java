@@ -1,11 +1,23 @@
 package com.example.demoproject;
 
-public class Student {
-    private String name;
-    private int id;
+import java.io.Serializable;
 
-    public Student(String name, int id) {
+public class Student implements Serializable {
+    private String id;
+    private String name;
+    private String pass;
+
+    public Student(String id, String name, String pass) {
+        this.id = id;
         this.name = name;
+        this.pass = pass;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -17,19 +29,20 @@ public class Student {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    public String getPass() {
+        return pass;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPass(String pass) {
+        this.pass = pass;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", pass='" + pass + '\'' +
                 '}';
     }
 }
